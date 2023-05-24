@@ -35,11 +35,11 @@
     <input class="startingAmount" bind:value={startingAmount} on:input={handleChange}/>
 	</div>
 	<div class="container">
-		<label for="startingAmount">Starting Amount</label>
+		<label for="startingAmount">Ending Amount</label>
     <input class="startingAmount" bind:value={endingAmount} on:input={handleChange}/>
 	</div>
 	<div class="container">
-		<label for="startingAmount">Starting Amount</label>
+		<label for="startingAmount">Years</label>
     <input class="startingAmount" bind:value={years} on:input={handleChange}/>
 	</div>
 	<div class="cagr">
@@ -60,16 +60,18 @@
 		flex-direction:row;
 		align-items: end;
     margin-top:10px;
+    justify-content: space-between;
 	}
 
 	input{
     font-size: 120%;
-    width: 150px;
+    width: 200px;
 		border: 0;
 		border: 0;
 		border-bottom: 1px solid #eee;
 		background:inherit;
 		padding-bottom:5px;
+    text-align:right;
   }
 
   input:focus-visible {
